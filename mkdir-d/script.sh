@@ -1,11 +1,12 @@
 #!/bin/sh
 
+MYHOME=/usr/bin
 
-if [ -d "/home/user/." ] 
+if [ -d "$MYHOME" ] 
 then
-	echo "/home/user/.は存在します。"
+	echo "$MYHOMEは存在します。"
 else
-	echo "/home/user/.は存在しません。"
-	mkdir -p /home/user
+	echo "$MYHOME存在しません。"
+	mkdir -p $MYHOME
 fi
 
